@@ -11,4 +11,4 @@ spring:
             temperature: 0.2
             top-p: 0.6
 server:
-  port: 8081
+  port: 8080
