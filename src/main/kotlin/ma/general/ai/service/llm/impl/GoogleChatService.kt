@@ -1,3 +1,5 @@
+
+/**
 package ma.general.ai.service.llm.impl
 
 import com.google.genai.Client
@@ -50,7 +52,7 @@ class GoogleChatService(
     ): String = getResponse(
         content = getContentFromParts(
             getTextPart(text), getMediaPart(base64EncodedFile, mimeType)
-    ),
+        ),
         config = GenerateContentConfig.builder().temperature(0.2f).topP(0.6f)
             .responseMimeType(MimeType.APPLICATION_JSON.mimeString)
             .apply { schema?.let { responseSchema(Schema.fromJson(it)) } }.build())
@@ -65,3 +67,4 @@ class GoogleChatService(
 
 
 }
+ **/
